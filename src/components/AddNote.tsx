@@ -1,9 +1,11 @@
 
+interface Props {
+    setFunc: React.Dispatch<React.SetStateAction<never[]>>
+}
 
+export function AddNote(props:Props) {
 
-export function AddNote(props) {
-
-    function addNew(event) {
+    function addNew(event:React.FormEvent<HTMLFormElement>) {
         event.preventDefault();
         const formData = new FormData(event.currentTarget);
         const sendObj = JSON.stringify({ "id": 0, "content": formData.get("text") })

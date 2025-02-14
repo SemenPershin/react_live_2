@@ -1,0 +1,9 @@
+.notes_list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.update_button {
+    color: green;
+}
